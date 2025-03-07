@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link as RouterLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../context/ThemeContext";
@@ -95,6 +95,23 @@ const Header = () => {
           >
             User Guide
           </NavLink>
+
+          <RouterLink to="/quiz">
+            <motion.span
+              className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
+              whileHover={{ y: -2 }}
+            >
+              Quiz
+            </motion.span>
+          </RouterLink>
+          <RouterLink to="/calculator">
+            <motion.span
+              className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
+              whileHover={{ y: -2 }}
+            >
+              Calculator
+            </motion.span>
+          </RouterLink>
         </nav>
 
         {/* Mobile Menu & Theme Toggle */}
