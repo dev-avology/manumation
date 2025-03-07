@@ -1,17 +1,16 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
-import { ThemeProvider } from './context/ThemeContext';
-import { PopupProvider } from './context/PopupContext';
-import './index.css';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import { ThemeProvider } from "./context/ThemeContext";
+import { PopupProvider } from "./context/PopupContext";
+import "./index.css";
 
-// Add script for the booking widget
-const script = document.createElement('script');
-script.src = 'https://link.msgsndr.com/js/form_embed.js';
-script.type = 'text/javascript';
+const script = document.createElement("script");
+script.src = "https://link.msgsndr.com/js/form_embed.js";
+script.type = "text/javascript";
 document.body.appendChild(script);
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
       <PopupProvider>

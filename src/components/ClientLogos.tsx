@@ -70,7 +70,7 @@ const ClientLogos = () => {
                   <img 
                     src={logo.url} 
                     alt={logo.name} 
-                    className="h-full object-contain max-w-[120px] filter dark:brightness-0 dark:invert"
+                    className="h-full object-contain max-w-[120px] filter dark:invert"
                   />
                 </div>
               </a>

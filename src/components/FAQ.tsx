@@ -57,7 +57,7 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span 
-            className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-300 font-medium text-sm mb-4"
+            className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-dark-700 dark:text-dark-700 font-medium text-sm mb-4"
           >
             Common Questions
           </motion.span>

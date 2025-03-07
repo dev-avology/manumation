@@ -14,7 +14,7 @@ const BlogPreview = () => {
     {
       title: "The Hidden Cost of Manual Processes in Your Business",
       excerpt: "Discover how manual processes are silently draining your business resources and how automation can save you thousands of dollars annually.",
-      date: "May 15, 2025",
+      date: "Feb 7, 2025",
       readTime: "7 min read",
       category: "Efficiency",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
@@ -22,7 +22,7 @@ const BlogPreview = () => {
     {
       title: "5 Ways to Automate Your Client Onboarding Process",
       excerpt: "Learn how to create a seamless, automated client onboarding experience that impresses clients and saves your team countless hours.",
-      date: "May 8, 2025",
+      date: "Feb 8, 2025",
       readTime: "9 min read",
       category: "Client Experience",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
@@ -30,7 +30,7 @@ const BlogPreview = () => {
     {
       title: "Why Most CRMs Fail (And How to Make Yours Succeed)",
       excerpt: "Understand the common pitfalls of CRM implementation and discover the strategies that ensure your CRM becomes a valuable business asset.",
-      date: "May 1, 2025",
+      date: "Feb 5, 2025",
       readTime: "8 min read",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
@@ -48,7 +48,7 @@ const BlogPreview = () => {
         >
           <div>
             <motion.span 
-              className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-300 font-medium text-sm mb-4"
+              className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-dark-700 dark:text-dark-700 font-medium text-sm mb-4"
             >
               Latest Insights
             </motion.span>
