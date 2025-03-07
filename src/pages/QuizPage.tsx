@@ -14,17 +14,17 @@ function QuizPage() {
 
   const benefits = [
     {
-      icon: <Target className="h-8 w-8 text-primary-500" />,
+      icon: <Target className="h-8 w-8 text-dark-700 dark:text-dark-700" />,
       title: "Identify Growth Blockers",
       description: "Discover exactly what's holding your business back from scaling efficiently."
     },
     {
-      icon: <Users className="h-8 w-8 text-primary-500" />,
+      icon: <Users className="h-8 w-8 text-dark-700 dark:text-dark-700" />,
       title: "Personalized Insights",
       description: "Get tailored recommendations based on your unique business challenges."
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-primary-500" />,
+      icon: <Lightbulb className="h-8 w-8 text-dark-700 dark:text-dark-700" />,
       title: "Actionable Solutions",
       description: "Walk away with clear next steps to transform your business operations."
     }
@@ -107,7 +107,7 @@ function QuizPage() {
             <div className="max-w-3xl mx-auto bg-light-100 dark:bg-dark-800 rounded-xl p-8 shadow-lg">
               <div className="flex items-start mb-6">
                 <div className="bg-primary-100 dark:bg-primary-900 p-3 rounded-full mr-4">
-                  <CheckCircle className="h-6 w-6 text-primary-500" />
+                  <CheckCircle className="h-6 w-6 text-dark-700 dark:text-dark-700" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 dark:text-light-100">

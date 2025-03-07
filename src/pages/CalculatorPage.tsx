@@ -12,17 +12,17 @@ function CalculatorPage() {
 
   const benefits = [
     {
-      icon: <Clock className="h-8 w-8 text-primary-500" />,
+      icon: <Clock className="h-8 w-8 text-dark-700 dark:text-dark-700" />,
       title: "Time Savings Analysis",
       description: "See exactly how many hours you could reclaim each week through automation."
     },
     {
-      icon: <DollarSign className="h-8 w-8 text-primary-500" />,
+      icon: <DollarSign className="h-8 w-8 text-dark-700 dark:text-dark-700" />,
       title: "Cost Reduction Insights",
       description: "Calculate potential savings from optimized operations and reduced manual work."
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-primary-500" />,
+      icon: <TrendingUp className="h-8 w-8 text-dark-700 dark:text-dark-700" />,
       title: "Growth Potential",
       description: "Discover how automation can unlock your business's true scaling potential."
     }
@@ -77,7 +77,7 @@ function CalculatorPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <CalculatorIcon className="h-10 w-10 text-primary-500" />
+                <CalculatorIcon className="h-10 w-10 text-dark-700 dark:text-dark-700" />
               </motion.div>
             </div>
 
