@@ -8,32 +8,30 @@ const ClientLogos = () => {
     threshold: 0.1,
   });
 
-  // Logos from keanonbiz.com homepage with link placeholders.
   const logos = [
     {
       name: "Premier Health Advisors",
-      url: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/IG9wqoGmStG82kdUXlsk/media/642419565cd63e4cf00dc3f4.jpeg",
-      link: "https://www.mypremierhealthadvisors.com/" // Replace with the actual URL.
+      url: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      link: "https://www.mypremierhealthadvisors.com/"
     },
     {
       name: "State Farm",
-      url: "https://assets.cdn.filesafe.space/5yufDyfhuTKFx8nCQCP6/media/67c7c616492ec08108e7cfb7.png",
+      url: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       link: "https://www.bethprince.com/"
     },
-   
     {
       name: "Empire Title",
-      url: "https://assets.cdn.filesafe.space/5yufDyfhuTKFx8nCQCP6/media/6648ccc75edee8ee6b9f572e.jpeg",
+      url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       link: "https://empiretitleservice.com/"
     },
     {
       name: "DB Plumbing",
-      url: "https://assets.cdn.filesafe.space/5yufDyfhuTKFx8nCQCP6/media/6484ab5f986800b49798b911.jpeg",
+      url: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       link: "https://www.dbplumbingin.com/"
     },
     {
       name: "Tracer CoCard",
-      url: "https://assets.cdn.filesafe.space/5yufDyfhuTKFx8nCQCP6/media/646ff395e1235653c23d37f2.png",
+      url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       link: "https://tracer-c2fs.com/"
     }
   ];
@@ -65,12 +63,13 @@ const ClientLogos = () => {
                 href={logo.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
+                className="group transition-transform duration-300 hover:scale-105"
               >
-                <div className="h-16 flex items-center justify-center p-2 bg-light-100 dark:bg-dark-700 rounded-lg shadow-sm">
+                <div className="h-16 w-32 flex items-center justify-center p-2 bg-light-100 dark:bg-dark-700 rounded-lg shadow-sm">
                   <img 
                     src={logo.url} 
                     alt={logo.name} 
-                    className="h-full object-contain max-w-[120px] filter dark:brightness-0 dark:invert"
+                    className="h-full w-full object-contain filter dark:brightness-0 dark:invert transition-all duration-300 group-hover:opacity-80"
                   />
                 </div>
               </a>

@@ -21,6 +21,7 @@ const Logo: React.FC<LogoProps> = ({ size = 'medium', showText = true }) => {
   const primaryColor = isDarkMode ? '#ffe14d' : '#ffe14d';
   const secondaryColor = isDarkMode ? '#ffd200' : '#ffd200';
   const textColor = isDarkMode ? 'text-light-100' : 'text-secondary-900';
+  const darkGrey = '#1e293b'; // Using Tailwind's dark-700 color
   
   return (
     <motion.div 
@@ -65,7 +66,7 @@ const Logo: React.FC<LogoProps> = ({ size = 'medium', showText = true }) => {
             cx="100" 
             cy="50" 
             r="8" 
-            fill={primaryColor}
+            fill={darkGrey}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 1.2 }}

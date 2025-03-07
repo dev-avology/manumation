@@ -3,13 +3,16 @@ import { motion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
 import { useTheme } from '../context/ThemeContext';
 import { usePopup } from '../context/PopupContext';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const { isDarkMode } = useTheme();
   const { openQuiz } = usePopup();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +22,37 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
+    if (isHomePage) {
+      return (
+        <ScrollLink
+          to={to}
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={800}
+        >
+          <motion.span
+            className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
+            whileHover={{ y: -2 }}
+          >
+            {children}
+          </motion.span>
+        </ScrollLink>
+      );
+    }
+    return (
+      <RouterLink to={`/#${to}`}>
+        <motion.span
+          className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
+          whileHover={{ y: -2 }}
+        >
+          {children}
+        </motion.span>
+      </RouterLink>
+    );
+  };
 
   return (
     <motion.header
@@ -34,26 +68,35 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <Logo size="medium" />
+        <RouterLink to="/">
+          <Logo size="medium" />
+        </RouterLink>
         
         <nav className="hidden md:flex space-x-8">
-          {['About', 'Services', 'Process', 'Contact'].map((item) => (
-            <Link
-              key={item}
-              to={item.toLowerCase()}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={800}
-            >
-              <motion.span
-                className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
-                whileHover={{ y: -2 }}
-              >
-                {item}
-              </motion.span>
-            </Link>
+          {['About', 'Services', 'Process'].map((item) => (
+            <NavLink key={item} to={item.toLowerCase()}>
+              {item}
+            </NavLink>
           ))}
+          <RouterLink to="/quiz">
+            <motion.span
+              className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
+              whileHover={{ y: -2 }}
+            >
+              Quiz
+            </motion.span>
+          </RouterLink>
+          <RouterLink to="/calculator">
+            <motion.span
+              className="font-medium text-secondary-700 dark:text-light-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors cursor-pointer"
+              whileHover={{ y: -2 }}
+            >
+              Calculator
+            </motion.span>
+          </RouterLink>
+          <NavLink to="contact">
+            Contact
+          </NavLink>
         </nav>
         
         <div className="flex items-center gap-4">
