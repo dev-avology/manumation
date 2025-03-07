@@ -94,7 +94,7 @@ const PainPoints = () => {
           ref={ref}
         >
           <motion.span 
-            className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-dark-700 dark:text-dark-700 font-medium text-sm mb-4"
+            className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-300 font-medium text-sm mb-4"
           >
             Self-Assessment
           </motion.span>
@@ -126,7 +126,7 @@ const PainPoints = () => {
             </p>
             <motion.button
               onClick={openQuiz}
-              className="bg-primary-600 hover:bg-primary-700 text-dark-700 dark:text-dark-700 font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
+              className="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

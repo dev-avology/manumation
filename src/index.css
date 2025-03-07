@@ -9,25 +9,3 @@ body {
 .dark {
   color-scheme: dark;
 }
-header .container {
-  max-width: 1536px;
-}
-
-@media screen and (max-width:575px){
-.yellow-shap {
-  width: 310px;
-  left: 50%!important;
-  transform: translateX(-50%)!important;
-}
-.shap-two,.shap-three {
-  left: -30px;
-  right: 0;
-  width: 255px;
-}
-.shap-three {
-  bottom: 0;
-}
-.shap-four {
-  left: -84px;
-}
-}

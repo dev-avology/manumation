@@ -79,14 +79,14 @@ const Hero = () => {
           </motion.div>
           
           <motion.div 
-            className="w-1/2 relative max-w-[400px]"
+            className="md:w-1/2 relative"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="relative h-[400px] w-full ">
+            <div className="relative h-[400px] w-full">
               <motion.div 
-                className="absolute yellow-shap top-0 right-0 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl h-[350px] w-[350px]  shadow-xl"
+                className="absolute top-0 right-0 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl h-[350px] w-[350px] shadow-xl"
                 animate={{ 
                   y: [0, -10, 0],
                   rotate: [0, 2, 0]
@@ -99,7 +99,7 @@ const Hero = () => {
               />
               
               <motion.div 
-                className="absolute shap-two top-10 left-10 bg-light-100 dark:bg-dark-700 rounded-2xl p-6 shadow-lg z-10 w-[300px]"
+                className="absolute top-10 left-10 bg-light-100 dark:bg-dark-700 rounded-2xl p-6 shadow-lg z-10 w-[300px]"
                 animate={{ 
                   y: [0, 10, 0],
                   rotate: [0, -1, 0]
@@ -132,7 +132,7 @@ const Hero = () => {
               </motion.div>
               
               <motion.div 
-                className="absolute shap-three bottom-10 right-10 bg-light-100 dark:bg-dark-700 rounded-2xl p-6 shadow-lg z-10 w-[280px]"
+                className="absolute bottom-10 right-10 bg-light-100 dark:bg-dark-700 rounded-2xl p-6 shadow-lg z-10 w-[280px]"
                 animate={{ 
                   y: [0, -8, 0],
                   rotate: [0, 1, 0]
@@ -171,7 +171,7 @@ const Hero = () => {
               </motion.div>
               
               <motion.div 
-                className="absolute shap-four top-10 sm:top-1/2 left-[-20px] sm:left-0 transform -translate-y-1/2 bg-light-100 dark:bg-dark-700 rounded-2xl p-4 shadow-lg z-10"
+                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-light-100 dark:bg-dark-700 rounded-2xl p-4 shadow-lg z-10"
                 animate={{ 
                   x: [0, 5, 0],
                   y: [0, -5, 0]

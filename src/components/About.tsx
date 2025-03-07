@@ -51,12 +51,12 @@ const About = () => {
           </motion.div>
           
           <motion.div className="md:w-2/3">
-          <motion.span 
-  className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-dark-700 dark:text-dark-700 font-medium text-sm mb-4"
-  variants={itemVariants}
->
-  About Me
-</motion.span>
+            <motion.span 
+              className="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-300 font-medium text-sm mb-4"
+              variants={itemVariants}
+            >
+              About Me
+            </motion.span>
             
             <motion.h2 
               className="text-3xl md:text-4xl font-display font-bold mb-6"
@@ -87,7 +87,7 @@ const About = () => {
             whileHover={{ y: -5 }}
           >
             <div className="bg-primary-100 dark:bg-primary-900 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-              <Award className="h-8 w-8 text-dark-700 dark:text-dark-700" />
+              <Award className="h-8 w-8 text-primary-600 dark:text-primary-400" />
             </div>
             <h3 className="text-xl font-bold mb-4 dark:text-light-100">Experience</h3>
             <p className="text-secondary-600 dark:text-light-400">
@@ -103,7 +103,7 @@ const About = () => {
             whileHover={{ y: -5 }}
           >
             <div className="bg-primary-100 dark:bg-primary-900 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-              <Users className="h-8 w-8 text-dark-700 dark:text-dark-700" />
+              <Users className="h-8 w-8 text-primary-600 dark:text-primary-400" />
             </div>
             <h3 className="text-xl font-bold mb-4 dark:text-light-100">Who I Help</h3>
             <p className="text-secondary-600 dark:text-light-400">
@@ -119,7 +119,7 @@ const About = () => {
             whileHover={{ y: -5 }}
           >
             <div className="bg-primary-100 dark:bg-primary-900 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-              <Briefcase className="h-8 w-8 text-dark-700 dark:text-dark-700" />
+              <Briefcase className="h-8 w-8 text-primary-600 dark:text-primary-400" />
             </div>
             <h3 className="text-xl font-bold mb-4 dark:text-light-100">My Approach</h3>
             <p className="text-secondary-600 dark:text-light-400">

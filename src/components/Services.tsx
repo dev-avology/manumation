@@ -72,7 +72,7 @@ const Services = () => {
               <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <UserCheck className="h-8 w-8 text-dark-700" />
               </div>
-              <h3 className="text-lg font-bold text-dark-700 mb-4">1:1 Coaching</h3>
+              <h3 className="text-2xl font-bold text-dark-700 mb-4">1:1 Coaching</h3>
               <p className="text-dark-700 mb-6 flex-grow">
                 Feel the empowerment of having a seasoned guide walk alongside you, teaching you to fish rather than just handing you the catch. The confidence you'll gain is transformative.
               </p>
@@ -98,7 +98,7 @@ const Services = () => {
               <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Users className="h-8 w-8 text-dark-700" />
               </div>
-              <h3 className="text-lg font-bold text-dark-700 mb-4">Done-With-You Services</h3>
+              <h3 className="text-2xl font-bold text-dark-700 mb-4">Done-With-You Services</h3>
               <p className="text-dark-700 mb-6 flex-grow">
                 Experience the perfect balance of learning and support as we build together. You'll feel ownership of the process while having an expert ensure you don't waste time on trial and error.
               </p>
@@ -124,7 +124,7 @@ const Services = () => {
               <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Cog className="h-8 w-8 text-dark-700" />
               </div>
-              <h3 className="text-lg font-bold text-dark-700 mb-4">Done-For-You Services</h3>
+              <h3 className="text-2xl font-bold text-dark-700 mb-4">Done-For-You Services</h3>
               <p className="text-dark-700 mb-6 flex-grow">
                 Enjoy the freedom of focusing solely on what you love while my team handles the rest. The relief of delegating your biggest headaches to experts who actually solve them is incomparable.
               </p>
