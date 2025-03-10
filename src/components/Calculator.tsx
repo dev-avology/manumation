@@ -217,9 +217,38 @@ const Calculator = () => {
     return savingsMap[businessType] || 0.35;
   };
 
-  const handleSubmitContactForm = (e: React.FormEvent) => {
+  const handleSubmitContactForm = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
+    
+    // Prepare data for webhook
+    const webhookData = {
+      ...contactForm,
+      tag: "#manumation calculator submission",
+      calculatorResults: {
+        ...formData,
+        ...result
+      }
+    };
+    
+    try {
+      // Send data to webhook
+      const response = await fetch('https://services.leadconnectorhq.com/hooks/5yufDyfhuTKFx8nCQCP6/webhook-trigger/52e3822c-2b32-4a6c-b8bd-520c35610734', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(webhookData)
+      });
+      
+      if (response.ok) {
+        setFormSubmitted(true);
+        console.log('Webhook data sent successfully:', webhookData);
+      } else {
+        console.error('Failed to send webhook data');
+      }
+    } catch (error) {
+      console.error('Error sending webhook data:', error);
+    }
   };
 
   const resetCalculator = () => {

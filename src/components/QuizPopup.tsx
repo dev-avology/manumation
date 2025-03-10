@@ -108,6 +108,7 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
     // Prepare data for webhook
     const webhookData = {
       ...formData,
+      tag: "#manumation quiz",
       quizResults: {
         yesAnswers: getYesCount(),
         totalQuestions: questions.length,
@@ -125,7 +126,7 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
     
     try {
       // Send data to webhook
-      const response = await fetch('https://services.leadconnectorhq.com/hooks/5yufDyfhuTKFx8nCQCP6/webhook-trigger/c72d1708-89e4-442f-a43a-2f49b22ed738', {
+      const response = await fetch('https://services.leadconnectorhq.com/hooks/5yufDyfhuTKFx8nCQCP6/webhook-trigger/52e3822c-2b32-4a6c-b8bd-520c35610734', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
