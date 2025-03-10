@@ -65,7 +65,7 @@ const ClientLogos = () => {
                 rel="noopener noreferrer"
                 className="group transition-transform duration-300 hover:scale-105"
               >
-                <div className="h-16 w-32 flex items-center justify-center p-2 bg-light-100 dark:bg-dark-700 rounded-lg shadow-sm">
+                <div className="h-16 flex items-center justify-center p-2 bg-light-100 dark:bg-dark-700 rounded-lg shadow-sm">
                   <img 
                     src={logo.url} 
                     alt={logo.name} 
