@@ -182,49 +182,49 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
   const questions = [
     {
       question: "Do you spend more time managing your business than actually doing what you love?",
-      icon: <Clock className="h-6 w-6" />,
+      icon: <Clock className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Life's too short to be drowning in admin. I can help you reclaim 15+ hours per week.",
       noResponse: "That's impressive! But imagine what you could do with even more time focused on growth."
     },
     {
       question: "Ever wake up at 3 AM remembering a client you forgot to follow up with?",
-      icon: <Calendar className="h-6 w-6" />,
+      icon: <Calendar className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Sleep better knowing your follow-ups happen automatically, even when you're dreaming.",
       noResponse: "Either you have a superhuman memory or you're already using some automation. Let's take it to the next level."
     },
     {
       question: "Is your inbox where potential clients go to be forgotten?",
-      icon: <Inbox className="h-6 w-6" />,
+      icon: <Inbox className="h-6 w-6text-dark-700 dark:text-dark-700" />,
       yesResponse: "Your inbox shouldn't be a graveyard for opportunities. Let's resurrect those relationships.",
       noResponse: "Excellent! But are you sure nothing's slipping through the cracks?"
     },
     {
       question: "Do you have more software subscriptions than streaming services?",
-      icon: <Search className="h-6 w-6" />,
+      icon: <Search className="h-6 w-6text-dark-700 dark:text-dark-700" />,
       yesResponse: "Tech stack bloat is real. I can help you consolidate and save $$$.",
       noResponse: "Minimalism is good! But are your few tools working together efficiently?"
     },
     {
       question: "Have you ever said 'there must be a better way to do this' at least 3 times in one day?",
-      icon: <Meh className="h-6 w-6" />,
+      icon: <Meh className="h-6 w-6text-dark-700 dark:text-dark-700" />,
       yesResponse: "There IS a better way. Several, actually. And I know them all.",
       noResponse: "Either you're already optimized or you've given up hoping. Let's assume the former!"
     },
     {
       question: "Do your clients sometimes wonder if you've fallen off the face of the earth?",
-      icon: <Frown className="h-6 w-6" />,
+      icon: <Frown className="h-6 w-6text-dark-700 dark:text-dark-700" />,
       yesResponse: "Client communication shouldn't require superhuman effort. Automation can make you omnipresent.",
       noResponse: "Your clients must love your attentiveness! Let's make sure it stays sustainable."
     },
     {
       question: "Is your business growth limited by the number of hours in a day?",
-      icon: <SmilePlus className="h-6 w-6" />,
+      icon: <SmilePlus className="h-6 w-6text-dark-700 dark:text-dark-700" />,
       yesResponse: "Time is finite, but your business potential shouldn't be. Let's break that ceiling.",
       noResponse: "You've cracked the code of scaling without burnout? I'm impressed! Let's take it even further."
     },
     {
       question: "Have you ever purchased a tool or system that's now gathering digital dust?",
-      icon: <Lightbulb className="h-6 w-6" />,
+      icon: <Lightbulb className="h-6 w-6text-dark-700 dark:text-dark-700" />,
       yesResponse: "Shiny object syndrome is expensive. Let's focus on what actually works for YOUR business.",
       noResponse: "You're either extremely disciplined or extremely lucky with your tech choices. Either way, I'm impressed!"
     }
@@ -268,7 +268,7 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                   </p>
                   <motion.button
                     onClick={startQuiz}
-                    className="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
+                    className="bg-primary-600 hover:bg-primary-700 text-dark-700 dark:text-dark-700 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

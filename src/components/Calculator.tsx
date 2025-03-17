@@ -362,7 +362,7 @@ const Calculator = () => {
                           />
                           
                           {steps[currentStep].suffix && (
-                            <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-secondary-500 dark:text-light-400">
+                            <span className="absolute right-10 top-1/2 transform -translate-y-1/2 text-secondary-500 dark:text-light-400">
                               {steps[currentStep].suffix}
                             </span>
                           )}

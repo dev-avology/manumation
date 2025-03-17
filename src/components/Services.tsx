@@ -80,6 +80,7 @@ const Services = () => {
                 className="mt-auto bg-white text-dark-700 font-medium py-3 px-6 rounded-full shadow-md inline-block self-start"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
               </motion.button>
@@ -106,6 +107,7 @@ const Services = () => {
                 className="mt-auto bg-white text-dark-700 font-medium py-3 px-6 rounded-full shadow-md inline-block self-start"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
               </motion.button>
@@ -132,6 +134,7 @@ const Services = () => {
                 className="mt-auto bg-white text-dark-700 font-medium py-3 px-6 rounded-full shadow-md inline-block self-start"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
               </motion.button>
