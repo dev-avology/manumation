@@ -194,37 +194,37 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
     },
     {
       question: "Is your inbox where potential clients go to be forgotten?",
-      icon: <Inbox className="h-6 w-6text-dark-700 dark:text-dark-700" />,
+      icon: <Inbox className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Your inbox shouldn't be a graveyard for opportunities. Let's resurrect those relationships.",
       noResponse: "Excellent! But are you sure nothing's slipping through the cracks?"
     },
     {
       question: "Do you have more software subscriptions than streaming services?",
-      icon: <Search className="h-6 w-6text-dark-700 dark:text-dark-700" />,
+      icon: <Search className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Tech stack bloat is real. I can help you consolidate and save $$$.",
       noResponse: "Minimalism is good! But are your few tools working together efficiently?"
     },
     {
       question: "Have you ever said 'there must be a better way to do this' at least 3 times in one day?",
-      icon: <Meh className="h-6 w-6text-dark-700 dark:text-dark-700" />,
+      icon: <Meh className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "There IS a better way. Several, actually. And I know them all.",
       noResponse: "Either you're already optimized or you've given up hoping. Let's assume the former!"
     },
     {
       question: "Do your clients sometimes wonder if you've fallen off the face of the earth?",
-      icon: <Frown className="h-6 w-6text-dark-700 dark:text-dark-700" />,
+      icon: <Frown className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Client communication shouldn't require superhuman effort. Automation can make you omnipresent.",
       noResponse: "Your clients must love your attentiveness! Let's make sure it stays sustainable."
     },
     {
       question: "Is your business growth limited by the number of hours in a day?",
-      icon: <SmilePlus className="h-6 w-6text-dark-700 dark:text-dark-700" />,
+      icon: <SmilePlus className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Time is finite, but your business potential shouldn't be. Let's break that ceiling.",
       noResponse: "You've cracked the code of scaling without burnout? I'm impressed! Let's take it even further."
     },
     {
       question: "Have you ever purchased a tool or system that's now gathering digital dust?",
-      icon: <Lightbulb className="h-6 w-6text-dark-700 dark:text-dark-700" />,
+      icon: <Lightbulb className="h-6 w-6 text-dark-700 dark:text-dark-700" />,
       yesResponse: "Shiny object syndrome is expensive. Let's focus on what actually works for YOUR business.",
       noResponse: "You're either extremely disciplined or extremely lucky with your tech choices. Either way, I'm impressed!"
     }
@@ -285,9 +285,9 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                           <div ref={resultsRef} className="text-center mb-8">
                             <div className="inline-flex items-center justify-center bg-primary-100 dark:bg-primary-900 w-20 h-20 rounded-full mb-6">
                               {getYesCount() >= 4 ? (
-                                <CheckCircle className="h-10 w-10 text-primary-600 dark:text-primary-400" />
+                                <CheckCircle className="h-10 w-10 text-primary-600 dark:text-dark-700" />
                               ) : (
-                                <HelpCircle className="h-10 w-10 text-primary-600 dark:text-primary-400" />
+                                <HelpCircle className="h-10 w-10 text-primary-600 dark:text-dark-700" />
                               )}
                             </div>
                             
@@ -409,7 +409,7 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                               <motion.button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className={`flex-1 bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md flex items-center justify-center ${
+                                className={`flex-1 bg-primary-600 hover:bg-primary-700 text-white dark:text-dark-700 font-medium py-3 px-6 rounded-lg transition-colors shadow-md flex items-center justify-center ${
                                   isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
                                 }`}
                                 whileHover={isSubmitting ? {} : { scale: 1.02 }}
@@ -455,11 +455,11 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                           <div className="text-center">
                             <motion.button
                               onClick={handleBookCall}
-                              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
+                              className="bg-primary-500 hover:bg-primary-600 text-white dark:text-dark-700 font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
                             >
-                              <CalendarIcon className="mr-2 h-5 w-5" />
+                              <CalendarIcon className="mr-2 h-5 w-5 text-dark-700 dark:text-dark-700" />
                               Schedule a Strategy Call
                             </motion.button>
                           </div>
@@ -472,7 +472,7 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                           className="text-center py-8"
                         >
                           <div className="inline-flex items-center justify-center bg-primary-100 dark:bg-primary-900 w-20 h-20 rounded-full mb-6">
-                            <CheckCircle className="h-10 w-10 text-primary-600 dark:text-primary-400" />
+                            <CheckCircle className="h-10 w-10 text-primary-600 dark:text-dark-700" />
                           </div>
                           
                           <h3 className="text-2xl font-bold mb-4 dark:text-light-100">
@@ -485,11 +485,11 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                           
                           <motion.button
                             onClick={handleBookCall}
-                            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
+                            className="bg-primary-500 hover:bg-primary-600 text-white dark:text-dark-700 font-medium py-3 px-6 rounded-lg transition-colors shadow-md inline-flex items-center"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                           >
-                            <CalendarIcon className="mr-2 h-5 w-5" />
+                            <CalendarIcon className="mr-2 h-5 w-5 text-dark-700 dark:text-dark-700" />
                             Schedule Your Call Now
                             <ArrowRight className="ml-2 h-5 w-5" />
                           </motion.button>
@@ -498,7 +498,7 @@ const QuizPopup: React.FC<QuizPopupProps> = ({ isOpen, onClose }) => {
                     </>
                   ) : (
                     <div className="h-full">
-                      <h3 className="text-2xl font-bold mb-6 dark:text-light-100">Schedule Your Strategy Call</h3>
+                      <h3 className="text-2xl font-bold mb-6 dark:text-dark-700">Schedule Your Strategy Call</h3>
                       <div className="rounded-lg overflow-hidden">
                         <iframe 
                           src="https://api.leadconnectorhq.com/widget/booking/exCGzR6pDrz2wfc2aoNt" 
