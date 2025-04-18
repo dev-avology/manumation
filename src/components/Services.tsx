@@ -60,7 +60,8 @@ const Services = () => {
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <motion.div 
+          <motion.div
+            id='coaching'
             className="relative overflow-hidden rounded-2xl shadow-lg group"
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -88,6 +89,7 @@ const Services = () => {
           </motion.div>
           
           <motion.div 
+            id='done-with-you'
             className="relative overflow-hidden rounded-2xl shadow-lg group"
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -115,6 +117,7 @@ const Services = () => {
           </motion.div>
           
           <motion.div 
+            id='done-for-you'
             className="relative overflow-hidden rounded-2xl shadow-lg group"
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

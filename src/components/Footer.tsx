@@ -4,6 +4,7 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import ThemeToggle from './ThemeToggle';
 import Logo from './Logo';
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   const { isDarkMode } = useTheme();
@@ -67,13 +68,17 @@ const Footer = () => {
             <ul className="space-y-2">
               {['1:1 Coaching', 'Done-With-You', 'Done-For-You', 'Strategy Sessions'].map((item) => (
                 <li key={item}>
-                  <motion.a 
-                    href="#"
-                    className="text-secondary-400 dark:text-light-400 hover:text-primary-400 transition-colors"
-                    whileHover={{ x: 3 }}
+                  <ScrollLink
+                    key={item}
+                    to={item==='1:1 Coaching' ? 'coaching' : item.toLocaleLowerCase()}
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={800}
+                    className="text-secondary-400 dark:text-light-400 hover:text-primary-400 transition-colors cursor-pointer"
                   >
                     {item}
-                  </motion.a>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
