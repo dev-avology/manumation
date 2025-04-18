@@ -70,7 +70,7 @@ const Footer = () => {
                 <li key={item}>
                   <ScrollLink
                     key={item}
-                    to={item==='1:1 Coaching' ? 'coaching' : item.toLocaleLowerCase()}
+                    to={'services'}
                     spy={true}
                     smooth={true}
                     offset={-100}
