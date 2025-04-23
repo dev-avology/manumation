@@ -91,14 +91,14 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-primary-400 mr-3 mt-0.5" />
                 <span className="text-secondary-400 dark:text-light-400">hello@manumation.com</span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <Phone className="h-5 w-5 text-primary-400 mr-3 mt-0.5" />
                 <span className="text-secondary-400 dark:text-light-400">(555) 123-4567</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary-400 mr-3 mt-0.5" />
                 <span className="text-secondary-400 dark:text-light-400">123 Business Ave, Suite 100<br />Innovation City, CA 94123</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
