@@ -54,6 +54,7 @@ const Blog3Content = () => (
     <section className="mb-12">
       <h3 className="text-2xl font-bold mb-4">How Manumation Builds a 24/7 Funnel for You</h3>
       <h4 className="text-xl font-bold mb-2 mt-6">Step 1: Capture Smarter</h4>
+      <p  className="mb-3">Instead of using one generic form, we:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>Create a dynamic lead capture that routes people based on their needs.</li>
         <li>Use quizzes, short surveys, or AI chat to qualify leads instantly.</li>
@@ -62,6 +63,7 @@ const Blog3Content = () => (
       <p className="mb-3">This means your funnel adapts from the start.</p>
       <h4 className="text-xl font-bold mb-2 mt-6">Step 2: Follow Up Instantly (Without Sounding Robotic)</h4>
       <p className="mb-3">According to <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" target="_blank" className="text-primary-600 underline hover:text-primary-800">Harvard Business Review</a>, businesses that respond within <strong>5 minutes are 100x more likely</strong> to connect with a lead.</p>
+      <p className="mb-3">With Manumation:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>AI agents send personalized replies in your voice.</li>
         <li>Email and SMS sequences are triggered based on time, interest, and behavior.</li>
@@ -69,6 +71,7 @@ const Blog3Content = () => (
         <li>And you? You get notified only when it's time to step in.</li>
       </ul>
       <h4 className="text-xl font-bold mb-2 mt-6">Step 3: Nurture With Value</h4>
+      <p  className="mb-3">Instead of hoping a lead sticks around, we set up:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>A 7–14 day nurture sequence with educational content.</li>
         <li>Re-engagement triggers if a lead goes cold.</li>
@@ -76,6 +79,7 @@ const Blog3Content = () => (
       </ul>
       <p className="mb-3">All of this is automated and tracked.</p>
       <h4 className="text-xl font-bold mb-2 mt-6">Step 4: Close Without the Chase</h4>
+      <p  className="mb-3">Once a lead is warmed up:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>Booking links are auto sent.</li>
         <li>Contracts and proposals are preloaded.</li>
