@@ -48,6 +48,7 @@ const Blog12Content = () => (
     </section>
     <section className="mb-12">
       <h3 className="text-2xl font-bold mb-4">What Is the Manumation Advantage?</h3>
+      <p className="mb-3">“Manumation” is our not-so-secret sauce, a human-centered automation system that blends:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>Your creative vision.</li>
         <li>The right AI agents.</li>
