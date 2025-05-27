@@ -5,6 +5,7 @@ import { useTheme } from '../context/ThemeContext';
 import ThemeToggle from './ThemeToggle';
 import Logo from './Logo';
 import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from 'react-router-dom';
 
 const Footer = () => {
   const { isDarkMode } = useTheme();
@@ -60,6 +61,11 @@ const Footer = () => {
                   </motion.a>
                 </li>
               ))}
+              <li>
+                <RouterLink to="/blog" className="text-secondary-400 dark:text-light-400 hover:text-primary-400 transition-colors">
+                  Blog
+                </RouterLink>
+              </li>
             </ul>
           </div>
           
