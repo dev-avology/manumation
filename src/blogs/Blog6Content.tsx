@@ -64,7 +64,7 @@ const Blog6Content = () => (
       <p className="mb-3">The truth is, most founders wait too long to systemize their business. They wait for the "Next hire" or "More time" or "Bigger revenue"... but growth doesn't wait.</p>
       <p className="mb-3 font-bold">Revenue growth starts when your business starts to run like a business, even when you're not there.</p>
       <p className="mb-3">And that's what Manumation delivers:</p>
-      <ul className="list-disc ml-6 space-y-2 mb-4">
+      <ul className="list-none  space-y-2 mb-4">
         <li>✔️ Systems that make money while you sleep.</li>
         <li>✔️ Teams that operate like clockwork.</li>
         <li>✔️ AI that does the heavy lifting.</li>

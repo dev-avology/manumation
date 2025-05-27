@@ -65,6 +65,7 @@ const Blog13Content = () => (
     </section>
     <section className="mb-12">
       <h3 className="text-xl font-bold mb-4">5. The Compound Effect of Automation</h3>
+      <p className="mb-3">Every task you automate saves you time today, but multiplies your earning power tomorrow.</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>New leads get nurtured before you even open your laptop.</li>
         <li>Clients are wowed by seamless onboarding.</li>

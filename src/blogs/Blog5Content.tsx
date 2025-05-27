@@ -42,6 +42,7 @@ const Blog5Content = () => (
     </section>
     <section className="mb-12">
       <h3 className="text-2xl font-bold mb-4">How Manumation Flips the Script</h3>
+      <p className="mb-3">Here’s what happens when you blend <strong>AI + automation + your existing offers</strong> into one smart system:</p>
       <ul className="list-disc ml-6 space-y-4 mb-4">
         <li>
           <strong>Lead Gen Runs in the Background</strong><br />

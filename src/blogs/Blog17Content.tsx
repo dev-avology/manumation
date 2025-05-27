@@ -25,6 +25,7 @@ const Blog17Content = () => (
     </section>
     <section className="mb-12">
       <h3 className="text-xl font-bold mb-4">The Real Cost of Manual Work? Your Growth</h3>
+      <p className="mb-3">Here’s what happens when you’re stuck in manual mode:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>You repeat the same emails every week.</li>
         <li>You forget follow-ups, losing leads and trust.</li>

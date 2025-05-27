@@ -26,6 +26,7 @@ const Blog1Content = () => (
     </section>
     <section className="mb-12">
       <h4 className="text-xl font-bold mb-3">Here's What You Can Offload to an AI Agent Today</h4>
+      <p className="mb-3">Imagine having a trained assistant who:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>Automatically responds to FAQs in your DMs or inbox.</li>
         <li>Draft follow-up emails based on conversation history.</li>

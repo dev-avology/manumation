@@ -19,7 +19,7 @@ const BlogPreview = () => {
       id: 1,
       title: "What If You Could Clone Yourself? How AI Agents Are Replacing Busywork for Founders",
       excerpt: "Let's face it, being a founder often means being everything: CEO, sales rep, social media manager, customer service, project coordinator, and copywriter. You know what needs to be done, but there's just not enough of you to go around.",
-      date: "May 24, 2025",
+      date: "May 01, 2025",
       readTime: "7 min read",
       category: "AI agents for entrepreneurs",
       image: b1Image
@@ -28,7 +28,7 @@ const BlogPreview = () => {
       id: 2,
       title: "Why You're Paying for Tools You're Not Using And How Manumation Fixes That",
       excerpt: "You're subscribed to Notion, Calendly, Slack, Zoom, ClickUp, Zapier, Airtable, Canva, Stripe, and ten other platforms. 'Just in case.' Sound familiar?",
-      date: "May 26, 2025",
+      date: "May 03, 2025",
       readTime: "9 min read",
       category: "software stack optimization",
       image: b2Image
@@ -37,7 +37,7 @@ const BlogPreview = () => {
       id: 3,
       title: "From Lead to Loyal Client: How to Build a 24/7 Sales System With Manumation",
       excerpt: "It happens all the time: You get a lead. You're excited. You mean to follow up. Then life happens: meetings, deadlines, family, and burnout.",
-      date: "May 27, 2025",
+      date: "May 04, 2025",
       readTime: "8 min read",
       category: "sales funnel automation",
       image: b3Image

@@ -30,7 +30,7 @@ const Blog8Content = () => (
       <h3 className="text-2xl font-bold mb-4">The Before-and-After of 200+ Businesses</h3>
       <img src={b9Image} alt="The Before-and-After of 200+ Businesses" className="w-full max-w-5xl mx-auto rounded-xl shadow-lg my-8" />
       <p className="mb-3">From solopreneurs to 10-person teams, our clients have one thing in common: They were maxed out and missing revenue. Once they implemented Manumation, here's what changed:</p>
-      <ul className="list-disc ml-6 space-y-2 mb-4">
+      <ul className="list-none space-y-2 mb-4">
         <li><span className="text-green-600 font-bold">✅</span> Response times dropped from hours to minutes without lifting a finger.</li>
         <li><span className="text-green-600 font-bold">✅</span> Leads got nurtured 24/7, even on weekends and holidays.</li>
         <li><span className="text-green-600 font-bold">✅</span> Sales funnels ran themselves, with conversions going up while time spent went down.</li>

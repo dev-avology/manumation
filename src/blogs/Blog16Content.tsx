@@ -46,6 +46,7 @@ const Blog16Content = () => (
     </section>
     <section className="mb-12">
       <h3 className="text-xl font-bold mb-4">Signs It's Time to Automate (Like, Yesterday)</h3>
+      <p className="mb-3">Still not sure if automation is your next move? If any of these feel familiar, it’s time:</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li>You're working weekends just to keep up.</li>
         <li>Your team asks you for everything.</li>
