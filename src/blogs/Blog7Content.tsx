@@ -46,6 +46,7 @@ const Blog7Content = () => (
         </li>
         <li>
           <strong>Client Onboarding + Delivery</strong>
+          <p className="mb-3">Still sending Google Docs and Stripe links one by one? Manumation creates workflows that:</p>
           <ul className="list-disc ml-6 mt-2">
             <li>Trigger invoices, contracts, and welcome packets.</li>
             <li>Assign tasks to clients or internal team members.</li>
@@ -55,6 +56,7 @@ const Blog7Content = () => (
         </li>
         <li>
           <strong>Follow-Ups That Don't Drop the Ball</strong>
+          <p className="mb-3">Most service providers lose revenue due to inconsistent follow-ups. With Manumation, you’ll have:</p>
           <ul className="list-disc ml-6 mt-2">
             <li>Smart reminders for upsells or renewals.</li>
             <li>Thank-you sequences that drive referrals.</li>
@@ -73,6 +75,7 @@ const Blog7Content = () => (
       </blockquote>
       <p className="mb-3">The irony? If you're time poor, you can't afford not to.</p>
       <p className="mb-3">Building automation doesn't mean disappearing behind dashboards or turning your business into a robot. It means amplifying what works so you can spend your energy on big-move decisions instead of babysitting your inbox.</p>
+      <p className="mb-3">Another one we hear:      </p>
       <blockquote className="border-l-4 border-primary-400 pl-4 italic text-secondary-700 dark:text-light-400 mb-3">
         "Automation feels cold."
       </blockquote>
