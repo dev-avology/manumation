@@ -38,6 +38,7 @@ const Blog10Content = () => (
     </section>
     <section className="mb-12">
       <h3 className="text-2xl font-bold mb-4">The Manumation Edge: 30 Years of Systems That Work</h3>
+      <p className="mb-3">There are hundreds of automation tools out there. What makes Manumation different?</p>
       <ul className="list-disc ml-6 space-y-2 mb-4">
         <li><strong>Human + Machine:</strong> We don't just automate. We humanize your workflows so they align with your values and brand voice.</li>
         <li><strong>Done-for-You, Not DIY:</strong> We build with you, then for you, so you stay in your genius zone.</li>
